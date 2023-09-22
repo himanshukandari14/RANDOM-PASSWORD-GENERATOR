@@ -1,0 +1,21 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+#wrapper{
+   background: #f12711;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+overflow: hidden;
+}
+#randomdiv{
+    background-color: #F59918;
+}
+#indicator{
+    box-shadow: 0px 0px 20px gray;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://kit.fontawesome.com/3e9f1fe9be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- wrapper -->
+    <div id="wrapper" class="h-[100vh] w-[100vw] flex flex-col justify-center items-center ">
+         <h1 class="text-[36px] font-bold ">Password Generator</h1>
+        <!-- body -->
+        <div class=" bg-[#fb801b]  gap-y-4 h-[425px] w-[450px] flex flex-col justify-start py-0 items-center relative rounded-lg shadow-2xl hover:scale-[1.01] duration-300">
+           
+            <div id="randomdiv" class="  w-full h-[60px] flex justify-between items-center px-3  ">
+                <!-- password screen -->
+                   <div id="passsec" class="text-[25px] text-white opacity-70">Password</div>
+                    <!-- copybtn -->
+                    <div class=" h-14 w-20 flex flex-col justify-end items-center pb-6 gap-8">
+                        <span id="copymsg" class="bg-green-400 px-2 hidden rounded">Copied</span>
+                         <i id="copybtn" class="fa-solid fa-copy fa-xl" style="color: #00b4f0;"></i>
+                    </div>
+            </div>
+
+            <!-- paswowprd length -->
+            <div class=" h-[60px] w-full flex justify-between items-center px-3 text-white text-[20px] border-t-2 border-transparent rounded-lg">
+               <div> <h1>Password length</h1></div>
+               <input class="text-black" type="number" name="" id="pass_length" max="30" min="2" value="0"/>
+            </div>
+
+            <!-- slider -->
+           <div class=" w-full h-[30px] flex justify-center items-center">
+           <input id="slider_range" type="range" value= 0 max=15 class="w-[90%] accent-[#ffc800]">
+           </div>
+           <!-- radio buttons -->
+           <div class="text-[18px] flex flex-col   w-full h-[30%] justify-center">
+            
+        <div class="self-start pl-3">
+               <input type="checkbox" name="uppercase" id="upper_field" class="border border-blue-500 accent-[transparent] bg-transparent hover:cursor-pointer" checked>
+           <label for="" class="pl-5" checkeds>Include Uppercase Letters</label>
+        </div>
+        <!--  -->
+         <div class="self-start pl-3">
+               <input type="checkbox" name="uppercase" id="lower_field" class="border border-blue-500 accent-[transparent] bg-transparent hover:cursor-pointer">
+           <label for="" class="pl-5">Include Lowercase Letters</label>
+        </div>
+        <!--  -->
+         <div class="self-start pl-3">
+               <input type="checkbox" name="uppercase" id="numbers_field" class="border border-blue-500 accent-[transparent] bg-transparent hover:cursor-pointer">
+           <label for="" class="pl-5">Include Numbers</label>
+        </div>
+        <!--  -->
+         <div class="self-start pl-3">
+               <input type="checkbox" name="uppercase" id="symbols_field" class="border border-blue-500 accent-[transparent] bg-transparent hover:cursor-pointer">
+           <label for="" class="pl-5">Include Symbols</label>
+        </div>
+           </div>
+          
+
+           <!-- generate password -->
+           <div class=" h-[70px] w-full flex justify-center  border-b-2 border-transparent rounded-lg border-orange-500">
+            <button id="generatebtn" class="bg-pink-400 px-28 py-1 rounded-2xl text-[25px] border-b-4 border-white">Generate Password</button>
+           </div>
+           
+        </div>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+</html>
